@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+        <title>Add program</title>
+<style>
+h2{
+color:red;
+text-align: center;
+font-size: 4vh;
+text-shadow: 2px 2px rgb(77, 1, 16);
+}
+#fno{
+text-align: center;
+color: blue;
+}
+#sno{
+        text-align: center; 
+        color: blue;          
+}
+#sum{
+        font-size: 4vh;
+        text-align: center;
+        background-color: bisque; 
+        color: rgb(28, 2, 77);
+}
+#b{
+    color: darkred;
+    background-color: #9cf0de;
+    padding: 15px 15px;
+    border-radius: 2vh;
+    
+}
+input{
+    width: 20%;
+     padding: 10px 10px;
+     border-radius: 2vh;
+     font-size: 3vh;
+  }
+
+#ans{
+        text-align: center; 
+        color: blue; 
+}
+
+
+</style>
+        <h2> Add Two Number </h2>
+        <script language="javascript">
+                function add()
+                {
+                        var a = parseInt(document.getElementById("fno").value);
+                        var b = parseInt(document.getElementById("sno").value);
+                        var c = document.getElementById("ans");
+                        c.value = a + b;
+                }
+        </script>
+  </head>
+  <body>
+<style>
+
+</style>
+<div id="sum">
+        Enter First Number : = <input type="text" id="fno" name="fno" value=""/><br><br>
+        Enter Second Number : = <input type="text" id="sno" name="sno" value=""/><br><br>
+        <input type="button" id="b" name="Sumbit" value="Calculate" onclick="javascript:add()"/><br><br>
+        Answer = <input type="text" id="ans" name="ans" value=""/> 
+        
+ </div>
+  </body>
+</html>
